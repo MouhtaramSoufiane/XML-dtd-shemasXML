@@ -1,0 +1,12 @@
+*{
+    color:red;
+    border:1px solid green;
+    display:block;
+}
+nom:before{
+   content:'Nom :';
+   padding :1px;
+   color:black;
+    
+    
+}

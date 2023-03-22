@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT operateur (client+) >
+<!ELEMENT client (abonnement+) >
+<!ELEMENT abonnement (facteur+)>
+<!ELEMENT facteur EMPTY >
+<!ATTLIST client 
+          code CDATA #REQUIRED
+          nom CDATA #REQUIRED
+                >
+<!ATTLIST abonnement 
+          numero NMTOKEN #REQUIRED
+          dateAb CDATA #REQUIRED
+          type (GSM|FIXE|INTERNET) 'GSM'
+                    >
+<!ATTLIST facteur 
+          num NMTOKEN #REQUIRED
+          dateFacr CDATA #REQUIRED
+          montant CDATA #REQUIRED
+          regle (Oui|Non) 'Non'
+          >

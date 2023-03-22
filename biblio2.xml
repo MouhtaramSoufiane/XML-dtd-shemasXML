@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Daaif_Xml/shemaxsd.xsd">
+    <etudiant code="12345" nom="Mouhtaram" prenom="soufiane" age="21">
+        <livre id="1" titre="XML" DatePret="2023-03-11" rendu="oui"/>
+        <livre id="2" titre="Angular" DatePret="2023-03-13" rendu="oui"/>
+
+    </etudiant>
+</biblio>

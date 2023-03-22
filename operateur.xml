@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="operateur1.xsl"?>
+<operateur xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Daaif_Xml/shemaOP.xsd">
+    <client code="123" nom="Mouhtaram" >
+        <abonnement numero="001" dateAbo="2023-03-11" type="GSM">
+            <facteur num="011" DateFact="2023-03-11" montant="500.5" regle="Oui"/>
+            <facteur num="033" DateFact="2023-03-12" regle="Oui" montant="400.5"/>
+        </abonnement>
+        <abonnement numero="002" dateAbo="2023-03-29" type="INTERNET">
+            <facteur num="066" DateFact="2023-03-29" montant="900" regle="Oui"/>
+        </abonnement>
+    </client>
+    <client code="456" nom="Haissouni">
+        <abonnement numero="111" dateAbo="2023-03-30" type="FIXE" >
+            <facteur num="22" DateFact="2023-03-30" montant="200" regle="Oui"/>
+        </abonnement>
+        <abonnement numero="678" dateAbo="2023-04-29" type="INTERNET">
+            <facteur num="37" DateFact="2023-04-30" regle="Oui" montant="600.9"/>
+            <facteur num="56" DateFact="2023-05-30" regle="Non" montant="500.9"/>
+        </abonnement>
+    </client>
+</operateur>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblio>
+    <etudiant code="1" prenom="soufiane" nom="mouhtaram" age="21">
+        <livre id="123" titre="java" datePret="2023-03-10" rendu="oui" ></livre>
+        <livre id="456" titre="xml" datePret="2023-03-10" rendu="oui" ></livre>
+    </etudiant>
+    <etudiant code="2" prenom="yassine" nom="sewli" age="22">
+        <livre id="767" titre="Angular" datePret="2023-03-10" rendu="non" ></livre>
+        <livre id="987" titre="Spring Boot" datePret="2023-03-10" rendu="non" ></livre>
+    </etudiant> 
+</biblio>

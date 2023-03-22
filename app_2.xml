@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblio SYSTEM "file:/C:/Daaif_Xml/biblio.dtd">
+<?xml-stylesheet type="text/xsl" href="Biblio.xsl"?>
+<biblio>
+    <etudiant code="19505786" nom="Mouhtaram" prenom="Soufiane" age="21">
+        <livre id="1911" titre="XML" DatePret="2023-03-11" rendu="non"/>
+        <livre id="1822" titre="Angular" DatePret="2023-03-12" rendu="oui"/>
+
+    </etudiant>
+    <etudiant code="18345657" nom="Youssfi" prenom="Mohamed" age="45">
+        <livre id="1733" titre="Web Services" DatePret="2023-03-18" rendu="oui"/>
+    </etudiant>
+</biblio>

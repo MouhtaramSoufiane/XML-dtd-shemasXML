@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+<xsd:element name="operateur">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="client" minOccurs="1" maxOccurs="unbounded" type="TYPE_CL"></xsd:element>
+        </xsd:sequence>
+        
+    </xsd:complexType>
+</xsd:element>
+<xsd:complexType name="TYPE_CL">
+    <xsd:sequence>
+        <xsd:element name="abonnement" minOccurs="1" maxOccurs="unbounded" type="TYPE_ABO"></xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="code" type="xsd:int" use="required"></xsd:attribute>
+    <xsd:attribute name="nom" type="xsd:string" use="required"></xsd:attribute>
+</xsd:complexType>
+<xsd:complexType name="TYPE_ABO">
+    <xsd:sequence>
+        <xsd:element name="facteur" minOccurs="1" maxOccurs="unbounded" type="TYPE_FACT"></xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="numero" type="xsd:string" use="required"></xsd:attribute>
+    <xsd:attribute name="dateAbo" type="xsd:date" use="required"></xsd:attribute>
+    <xsd:attribute name="type" >
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="GSM"></xsd:enumeration>
+                <xsd:enumeration value="FIXE"></xsd:enumeration>
+                <xsd:enumeration value="INTERNET"></xsd:enumeration>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:attribute>
+</xsd:complexType>
+<xsd:complexType name="TYPE_FACT">
+    <xsd:attribute name="num" type="xsd:string" use="required"></xsd:attribute>
+    <xsd:attribute name="DateFact" type="xsd:date" use="required"></xsd:attribute>
+    <xsd:attribute name="montant" type="xsd:double"></xsd:attribute>
+    <xsd:attribute name="regle" default="Non">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="Non"></xsd:enumeration>
+                <xsd:enumeration value="Oui"></xsd:enumeration>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:attribute>
+</xsd:complexType>
+   
+</xsd:schema>
